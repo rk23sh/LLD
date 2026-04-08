@@ -10,6 +10,7 @@ class Pizza {
     String toppings;
 }
 
+// this is a concept
 interface PizzaBuilder {
     void flattenDough();
     void spreadSauce();
@@ -41,6 +42,7 @@ class VegPizzaBuilder implements PizzaBuilder {
     }
 }
 
+// this is not necessary, director is optional, client can handle it itself. no need for director.
 class PizzaDirector {
     public void constructPizza(PizzaBuilder builder) {
         builder.flattenDough();
